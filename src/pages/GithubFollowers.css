@@ -1,0 +1,23 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.right-pane{
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    margin-left: 20px;
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dotted-border{
+    border: 3px dotted #ddd;
+    padding: 10px;
+    border-radius: 15px;
+}
