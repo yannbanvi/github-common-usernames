@@ -3,7 +3,6 @@ import PageHeader from "../components/PageHeader";
 import "./GithubFollowers.css";
 import isEqual from "lodash/isEqual";
 import intersectionWith from "lodash/intersectionWith";
-import { Link } from "react-router-dom";
 import GithubUserList from "../components/GithubUserList";
 import SearchForm from "../components/SearchForm";
 
@@ -48,11 +47,18 @@ function GithubFollowers() {
 
       <div className="d-flex">
         <div style={{ width: "350px" }}>
-          <SearchForm handleOnChange={handleOnChange} handleSubmit={handleSubmit} usernames={usernames} />
+          <SearchForm
+            handleOnChange={handleOnChange}
+            handleSubmit={handleSubmit}
+            usernames={usernames}
+          />
         </div>
 
         <div className="right-pane w-100">
-          <GithubUserList commonUsers={commonUsers} goToGithubLink={goToGithubLink}/>
+          <GithubUserList
+            commonUsers={commonUsers}
+            goToGithubLink={goToGithubLink}
+          />
         </div>
       </div>
     </>
